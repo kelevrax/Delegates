@@ -38,9 +38,10 @@ namespace Delegates
 
         private void MainWindowLoaded(object sender, RoutedEventArgs e)
         {
-            data = new ProductsDataSource();
-            this.productList.DataContext = data.Products;
+            data = new ProductsDataSource(); //Creo il "database" degli oggetti in vendita
+            this.productList.DataContext = data.Products; //Carica i dati creati prima nell'interfaccia 
 
+            //Creo un oggetto Order per contenere la lista di oggetti da comprare
             this.order = new Order { Date = DateTime.Now, Items = new List<OrderItem>(), OrderID = Guid.NewGuid(), TotalValue = 0 };
         }
 
@@ -49,7 +50,7 @@ namespace Delegates
             try
             {
                 // Find the product ID of the selected product (contained in the Tag property of the button)
-                Button addButton = sender as Button;
+                Button addButton = sender as Button; // as è una sorta di casting degli oggetti
                 string productId = addButton.Tag as string;
 
                 // Display the list view header if it is not already visible
@@ -125,13 +126,13 @@ namespace Delegates
             }
         }
 
-        /*private bool requestPayment()
+        private bool requestPayment()
         {
             // Payment processing goes here
 
             // Payment logic is not implemented in this example
             // - simply return true
             return true;
-        }*/
+        }
     }
 }

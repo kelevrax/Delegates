@@ -19,13 +19,17 @@ namespace AuditService
 
         private async void doAuditing(Order order)
         {
-            List<OrderItem> ageRestrictedItems = findAgeRestrictedItems(order);
+            List<OrderItem> ageRestrictedItems = findAgeRestrictedItems(order); // Cerco la presenza di item restricted nella lista degli ordini
             if (ageRestrictedItems.Count > 0)
             {
                 try
                 {
+                    // stringa che contine il percorso della cartella documenti
                     string path= Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                    // Separatore livelli cartelle
                     char seperator = Path.DirectorySeparatorChar;
+
+                    // Creo un metodo asincrono (infatti ho dichiarato la funzione async) per la creazione del file (così evito di bloccare tutto se quest'operazione impiega più del dovuto
                     FileStream file = await Task.Run<FileStream>(() => File.Create(path + seperator + "audit-" + order.OrderID.ToString() + ".xml"));
 
                     if (file != null)
