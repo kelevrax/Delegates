@@ -12,9 +12,11 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+
 using DataTypes;
 using AuditService;
 using DeliveryService;
+using ChekoutService;
 
 namespace Delegates
 {
@@ -27,6 +29,9 @@ namespace Delegates
         private Order order = null;
         private Auditor auditor = null;
         private Shipper shipper = null;
+        private CheckoutController checkoutController = null;
+        
+ 
 
         public MainWindow()
         {
@@ -34,6 +39,10 @@ namespace Delegates
 
             this.auditor = new Auditor();
             this.shipper = new Shipper();
+            checkoutController = new CheckoutController();
+            checkoutController.CheckoutProcessing += auditor.AuditOrder;
+            checkoutController.CheckoutProcessing += shipper.ShipOrder;
+
         }
 
         private void MainWindowLoaded(object sender, RoutedEventArgs e)
@@ -104,11 +113,12 @@ namespace Delegates
             try
             {
                 // Perform the checkout processing
-                if (this.requestPayment())
+                /*if (this.requestPayment())
                 {
                     this.auditor.AuditOrder(this.order);
                     this.shipper.ShipOrder(this.order);
-                }
+                }*/
+                checkoutController.StartCheckoutProcessing(order);
 
                 // Display a summary of the order
                 MessageBox.Show(String.Format("Order {0}, value {1:C}", order.OrderID, order.TotalValue), "Order Placed");
@@ -126,13 +136,13 @@ namespace Delegates
             }
         }
 
-        private bool requestPayment()
+        /*private bool requestPayment()
         {
             // Payment processing goes here
 
             // Payment logic is not implemented in this example
             // - simply return true
             return true;
-        }
+        }*/
     }
 }

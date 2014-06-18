@@ -1,0 +1,7 @@
+C:\Users\kelevrax\Documents\Microsoft Press\Visual CSharp Step By Step\Chapter 20\Windows 7\Delegates\ChekoutService\obj\Debug\ChekoutService.csprojResolveAssemblyReference.cache
+C:\Users\kelevrax\Documents\Microsoft Press\Visual CSharp Step By Step\Chapter 20\Windows 7\Delegates\ChekoutService\bin\Debug\ChekoutService.dll
+C:\Users\kelevrax\Documents\Microsoft Press\Visual CSharp Step By Step\Chapter 20\Windows 7\Delegates\ChekoutService\bin\Debug\ChekoutService.pdb
+C:\Users\kelevrax\Documents\Microsoft Press\Visual CSharp Step By Step\Chapter 20\Windows 7\Delegates\ChekoutService\bin\Debug\DataTypes.dll
+C:\Users\kelevrax\Documents\Microsoft Press\Visual CSharp Step By Step\Chapter 20\Windows 7\Delegates\ChekoutService\bin\Debug\DataTypes.pdb
+C:\Users\kelevrax\Documents\Microsoft Press\Visual CSharp Step By Step\Chapter 20\Windows 7\Delegates\ChekoutService\obj\Debug\ChekoutService.dll
+C:\Users\kelevrax\Documents\Microsoft Press\Visual CSharp Step By Step\Chapter 20\Windows 7\Delegates\ChekoutService\obj\Debug\ChekoutService.pdb

@@ -29,8 +29,8 @@ namespace ChekoutService
             if(this.requestPayment())
             {
                 if (this.CheckoutProcessing != null)
-                { 
-                    this.CheckoutProcessing(order)
+                {
+                    this.CheckoutProcessing(order);
                 }
             }
         }

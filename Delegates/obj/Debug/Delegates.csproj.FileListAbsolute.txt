@@ -61,3 +61,5 @@ C:\Users\kelevrax\Documents\Microsoft Press\Visual CSharp Step By Step\Chapter 2
 C:\Users\kelevrax\Documents\Microsoft Press\Visual CSharp Step By Step\Chapter 20\Windows 7\Delegates\Delegates\obj\Debug\Delegates.g.resources
 C:\Users\kelevrax\Documents\Microsoft Press\Visual CSharp Step By Step\Chapter 20\Windows 7\Delegates\Delegates\obj\Debug\Delegates.Properties.Resources.resources
 C:\Users\kelevrax\Documents\Microsoft Press\Visual CSharp Step By Step\Chapter 20\Windows 7\Delegates\Delegates\obj\Debug\Delegates.csproj.GenerateResource.Cache
+C:\Users\kelevrax\Documents\Microsoft Press\Visual CSharp Step By Step\Chapter 20\Windows 7\Delegates\Delegates\bin\Debug\ChekoutService.dll
+C:\Users\kelevrax\Documents\Microsoft Press\Visual CSharp Step By Step\Chapter 20\Windows 7\Delegates\Delegates\bin\Debug\ChekoutService.pdb

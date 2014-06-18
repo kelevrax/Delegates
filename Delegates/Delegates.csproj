@@ -101,6 +101,10 @@
       <Project>{51471415-1426-474e-8998-3eadbe54304c}</Project>
       <Name>AuditService</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ChekoutService\ChekoutService.csproj">
+      <Project>{a3ae9ec7-0557-4dc7-bb11-1e6afb885f56}</Project>
+      <Name>ChekoutService</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DataTypes\DataTypes.csproj">
       <Project>{93b13794-3c47-49c7-8756-b0b083736824}</Project>
       <Name>DataTypes</Name>
